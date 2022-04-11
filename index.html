@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawsome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+
+<form >
+    <i class="fas fa-paper-plane"></i>
+    <article class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter Your Name" id="contact-name" onkeyup="validateName()">
+        <span id="name-error"></span>
+    </article>
+
+    <article class="input-group">
+        <label>Phone No. </label>
+        <input type="text" placeholder="123 456 7890">
+        <span id="phone-error"></span>
+    </article>
+
+    <article class="input-group">
+        <label>Email Id </label>
+        <input type="email" placeholder="Enter your Email">
+        <span id="email-error"></span>
+    </article>
+
+    <article class="input-group">
+        <label>Your Message </label>
+       <textarea  rows="5" placeholder="Enter your message"></textarea>
+       <span id="message-error"></span>
+    </article>
+
+    <button>Submit</button>
+    <span id="submit-error"></span>
+
+
+
+
+</form>
+
+
+
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
