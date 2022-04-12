@@ -33,11 +33,11 @@
 
     <article class="input-group">
         <label>Your Message </label>
-       <textarea  rows="5" placeholder="Enter your message"></textarea>
+       <textarea  rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
        <span id="message-error"></span>
     </article>
 
-    <button>Submit</button>
+    <button onclick="return validateForm()" >Submit</button>
     <span id="submit-error"></span>
 
 
