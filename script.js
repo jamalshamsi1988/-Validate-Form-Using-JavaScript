@@ -17,3 +17,17 @@ if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
 nameError.innerText='<i class="fa-solid fa-circle-check"></i>';
 return true;
 }
+
+function validatePhone() {
+  let phone = document.getElementById("contact-phone").value;
+  if (phone.length == 0) {
+    phoneError.innerText = "Phone is required";
+    return false;
+  }
+  if (!phone.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+    phoneError.innerText = "phone num shoud be 10 dihits";
+    return false;
+  }
+  phoneError.innerText = '<i class="fa-solid fa-circle-check"></i>';
+  return true;
+}
